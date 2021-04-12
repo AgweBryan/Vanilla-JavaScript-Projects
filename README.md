@@ -1,0 +1,3 @@
+# 10+ Vanilla JavaScript Projects
+For me, the best way to learn is to learn while doing projects.
+These projects helped me learn javascript. Check them out...
