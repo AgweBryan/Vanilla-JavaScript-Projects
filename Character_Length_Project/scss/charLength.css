@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  letter-spacing: 0.1rem;
+}
+
+.projectContainer {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 500px) {
+  .projectContainer {
+    width: 85%;
+  }
+}
+.projectContainer .container {
+  padding: 1rem;
+  text-align: center;
+}
+.projectContainer .container .header {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.projectContainer .container .header .projectName {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: #324d67;
+  letter-spacing: 0.3rem;
+}
+.projectContainer .container .header .underline {
+  width: 130px;
+  height: 4px;
+  background: #2d87c8;
+  margin: auto;
+  border-radius: 3px;
+}
+.projectContainer .container .projectUI {
+  text-align: center;
+  padding: 0 1rem;
+}
+.projectContainer .container .projectUI #text {
+  width: 100%;
+  border: none;
+  background: #f1f5f8;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 0.3rem;
+}
+.projectContainer .container .projectUI #text:focus {
+  outline: #6ebef7 !important;
+}
+.projectContainer .container .projectUI .btn {
+  font-size: 1.1rem;
+  background: #49a6e9;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 20px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.5s linear;
+}
+.projectContainer .container .projectUI .btn:hover {
+  background: #a5d5f8;
+  color: #617d98;
+}
+.projectContainer .container .projectUI .btn:focus {
+  outline: none;
+}
+.projectContainer .container .output {
+  margin: 1rem 0;
+}
+.projectContainer .container .output h3 {
+  color: #324d67;
+  display: inline;
+  padding: 0.5rem;
+  text-transform: capitalize;
+}
+.projectContainer .container .output h3:hover {
+  background: #f1f5f8;
+  border-radius: 5px;
+}

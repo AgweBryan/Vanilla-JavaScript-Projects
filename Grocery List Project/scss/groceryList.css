@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f1f5f8;
+  letter-spacing: 0.1rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:focus {
+  outline: 2px solid #49a6e9 !important;
+}
+
+.projectContainer {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 400px;
+}
+.projectContainer .container {
+  padding: 1rem;
+}
+.projectContainer .container .header {
+  text-align: center;
+  margin: 1.2rem 0 2.5rem 0;
+}
+.projectContainer .container .header .projectName {
+  font-size: 1.5rem;
+  color: #102a42;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.projectContainer .container .header .underline {
+  width: 70px;
+  height: 3px;
+  margin: auto;
+  background: #49a6e9;
+  border-radius: 5px;
+}
+.projectContainer .container .inputForm {
+  margin-bottom: 2rem;
+  display: flex;
+}
+.projectContainer .container .inputForm .input-item {
+  width: 75%;
+  padding: 0.5rem;
+  background: #f1f5f8;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  color: #324d67;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
+.projectContainer .container .inputForm .input-item:focus {
+  outline: none;
+  border: 2px solid #c5e5fc;
+  border-radius: 5px 0 0 5px;
+}
+.projectContainer .container .inputForm .submit {
+  width: 25%;
+  background: #49a6e9;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 0 5px 5px 0;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s linear;
+}
+.projectContainer .container .inputForm .submit:hover {
+  background: #8bcbf9;
+}
+.projectContainer .container .inputForm .submit:focus {
+  outline: none;
+}
+@media (max-width: 400px) {
+  .projectContainer .container .inputForm .submit {
+    letter-spacing: 0;
+  }
+}
+.projectContainer .container .display-block {
+  display: block !important;
+}
+.projectContainer .container .display-none {
+  display: none;
+}
+.projectContainer .container .display-none .itemsContainer .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.projectContainer .container .display-none .itemsContainer .item:hover {
+  background: #f1f5f8;
+}
+.projectContainer .container .display-none .itemsContainer .item .itemName {
+  color: #104e7a;
+  text-transform: capitalize;
+}
+.projectContainer .container .display-none .itemsContainer .item .btn-group .editBtn {
+  cursor: pointer;
+  color: #47e990;
+  background: transparent;
+  border: none;
+  margin-right: 0.5rem;
+  padding: 0.2rem;
+}
+.projectContainer .container .display-none .itemsContainer .item .btn-group .deleteBtn {
+  cursor: pointer;
+  color: #e9474f;
+  background: transparent;
+  border: none;
+  padding: 0.2rem;
+}
+.projectContainer .container .display-none .clrDiv {
+  text-align: center;
+  margin-top: 2rem;
+}
+.projectContainer .container .display-none .clrDiv button {
+  background: #e9474f;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 0.4rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 50px;
+  color: #324d67;
+  cursor: pointer;
+  transition: background 0.5s linear;
+}
+.projectContainer .container .display-none .clrDiv button:hover {
+  background: #f7797f;
+  color: #102a42;
+}
+
+@media (max-width: 456px) {
+  .projectContainer {
+    width: 85%;
+  }
+}

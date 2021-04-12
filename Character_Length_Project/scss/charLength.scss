@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./resets";
+@import "./variables";
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: $background;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	letter-spacing: 0.1rem;
+}
+
+.projectContainer {
+	background: #fff;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: $dark-shadow;
+
+	@media (max-width: 500px) {
+		width: 85%;
+	}
+
+	.container {
+		padding: 1rem;
+		text-align: center;
+
+		.header {
+			margin-bottom: 2rem;
+			margin-top: 1rem;
+
+			.projectName {
+				font-size: 1.7rem;
+				text-transform: capitalize;
+				font-weight: bold;
+				margin-bottom: 0.4rem;
+				color: $heading-3;
+				letter-spacing: 0.3rem;
+			}
+
+			.underline {
+				width: 130px;
+				height: 4px;
+				background: $primary-color-4;
+				margin: auto;
+				border-radius: 3px;
+			}
+		}
+
+		.projectUI {
+			text-align: center;
+			padding: 0 1rem;
+
+			#text {
+				width: 100%;
+				border: none;
+				background: $background;
+				height: 50px;
+				border-radius: 5px;
+				padding: 0 0.3rem;
+
+				&:focus {
+					outline: $primary-color-6 !important;
+				}
+			}
+
+			.btn {
+				font-size: 1.1rem;
+				background: $primary-color-5;
+				border: none;
+				padding: 0.3rem 0.5rem;
+				border-radius: 20px;
+				margin: 0.5rem 0;
+				cursor: pointer;
+				transition: background 0.5s linear;
+
+				&:hover {
+					background: $primary-color-8;
+					color: $para-1;
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+
+		.output {
+			margin: 1rem 0;
+
+			h3 {
+				color: $heading-3;
+				display: inline;
+				padding: 0.5rem;
+				text-transform: capitalize;
+
+				&:hover {
+					background: $background;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+}

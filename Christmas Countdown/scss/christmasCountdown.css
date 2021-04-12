@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  background: #f1f5f8;
+}
+
+.container {
+  display: flex;
+  justify-content: "space-between";
+  align-items: center;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+}
+
+.projectContainer {
+  padding: 1rem;
+  flex: 2;
+}
+.projectContainer .header {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.projectContainer .header .projectName {
+  text-transform: capitalize;
+  color: #104e7a;
+  letter-spacing: 0.3rem;
+  font-size: 2.3rem;
+}
+.projectContainer .header .underline {
+  width: 100px;
+  height: 5px;
+  border-radius: 3px;
+  background: #1a6aa2;
+  margin-top: 7px;
+  margin-left: 4px;
+}
+.projectContainer .projectBody {
+  padding: 4px;
+}
+.projectContainer .projectBody p {
+  color: #617d98;
+  margin-bottom: 1.3rem;
+}
+.projectContainer .projectBody .countdown {
+  display: flex;
+}
+.projectContainer .projectBody .countdown .time {
+  background: #102a42;
+  text-align: center;
+  padding: 0.7rem 0rem;
+  width: 70px;
+  margin: 0 0.2rem;
+}
+.projectContainer .projectBody .countdown .time h3 {
+  color: #ebf7ff;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+.projectContainer .projectBody .countdown .time h5 {
+  color: #bcccdc;
+  text-transform: uppercase;
+}
+
+.image {
+  display: flex;
+  justify-content: "center";
+  align-items: center;
+  flex: 1;
+  background: url("../images/christmasTree.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+}
+.image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.image img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .container .image {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .container .image img {
+    width: 50%;
+    height: 250px;
+  }
+  .container .projectContainer {
+    text-align: center;
+  }
+  .container .projectContainer .header .projectName {
+    font-size: 2rem;
+  }
+  .container .projectContainer .header .underline {
+    margin: auto;
+  }
+  .container .projectContainer .projectBody .countdown {
+    justify-content: center;
+  }
+  .container .projectContainer .projectBody .countdown .time {
+    width: 60px;
+  }
+  .container .projectContainer .projectBody .countdown .time h3 {
+    font-size: 1.4rem;
+  }
+  .container .projectContainer .projectBody .countdown .time h5 {
+    font-size: 0.6rem;
+  }
+}

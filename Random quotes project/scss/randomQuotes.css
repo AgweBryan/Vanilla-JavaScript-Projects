@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
+
+.project-container {
+  background: #fff;
+  width: 400px;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .project-container {
+    width: 85%;
+  }
+}
+.project-container .quote {
+  color: #324d67;
+}
+.project-container .speaker {
+  display: block;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  color: #9eb2c7;
+}
+.project-container img {
+  width: 100px;
+  height: 100px;
+}
+.project-container .btn {
+  background: #a5d5f8;
+  border: none;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  color: #102a42;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.project-container .btn:hover {
+  background: #49a6e9;
+}

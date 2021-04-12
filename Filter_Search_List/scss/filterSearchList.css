@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+body {
+  background-color: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.projectContainer {
+  width: 300px;
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.projectContainer .header {
+  margin: 1rem 0 2rem 0;
+}
+.projectContainer .header h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: #324d67;
+}
+.projectContainer .header .underline {
+  width: 70px;
+  height: 3px;
+  margin: auto;
+  margin-top: 3px;
+  border-radius: 4px;
+  background: #a5d5f8;
+}
+.projectContainer .projectUI {
+  padding-bottom: 1rem;
+}
+.projectContainer .projectUI #search {
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  background: #f1f5f8;
+  border-radius: 5px;
+  color: #617d98;
+}
+.projectContainer .projectUI #search:focus {
+  outline: none;
+  border: 2px solid #c5e5fc;
+}
+.projectContainer .projectUI .list-group {
+  list-style: none;
+  margin: 2rem 0;
+}
+.projectContainer .projectUI .list-group .list-group-item {
+  border: 1px solid #c5e5fc;
+  color: #617d98;
+  text-transform: uppercase;
+  padding: 0.7rem 0;
+}
+.projectContainer .projectUI .list-group .list-group-item:hover {
+  background: #f1f5f8;
+}

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+body {
+  font-family: "Architects Daughter", cursive;
+  background: coral;
+  letter-spacing: 0.1rem;
+}
+
+.container-1 {
+  margin: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 1rem 0;
+  margin: auto;
+}
+.container-1 h1 {
+  text-transform: capitalize;
+  color: #102a42;
+}
+.container-1 button {
+  font-family: "Architects Daughter", cursive;
+  border: none;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  outline: none;
+  color: #324d67;
+}
+.container-1 button:hover {
+  color: #1a6aa2;
+}
+
+.display {
+  display: block !important;
+}
+
+.container-2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  z-index: 999;
+}
+.container-2 textarea {
+  font-family: "Architects Daughter", cursive;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  padding: 2.3rem 1rem 1rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #324d67;
+  box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.7);
+}
+.container-2 .btn-group {
+  position: relative;
+  top: -99%;
+  left: 75%;
+  border: none;
+  padding: 0.2rem;
+  background: transparent;
+}
+.container-2 .btn-group .check-btn {
+  padding: 0.1rem 0.15rem;
+  border: 1px solid #617d98;
+  color: #617d98;
+  background: transparent;
+  cursor: pointer;
+}
+.container-2 .btn-group .times-btn {
+  padding: 0.1rem 0.25rem;
+  border: 1px solid #617d98;
+  color: #617d98;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 0 auto;
+}
+.container-3 .note {
+  width: 250px;
+  height: 250px;
+  background: turquoise;
+  padding: 1.5rem;
+  margin: 0.5rem 0.5rem;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.container-3 .note:hover {
+  box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1) !important;
+}

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./reset";
+@import "./variables";
+
+body {
+	letter-spacing: 0.1rem;
+	font-family: "Roboto", sans-serif;
+	background: $background;
+}
+
+.header {
+	text-align: center;
+	margin: 2rem 0;
+
+	.project-title {
+		color: $heading-1;
+		font-size: 1.7rem;
+		letter-spacing: 0.2rem;
+		margin-bottom: 12px;
+	}
+
+	.underline {
+		margin: auto;
+		width: 80px;
+		height: 3.5px;
+		background: $primary-color-5;
+		border-radius: 5px;
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.game-box {
+		background: #fff;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1rem;
+		box-shadow: $dark-shadow;
+		border-radius: 10px;
+		color: $para-1;
+
+		@media (max-width: 710px) {
+			width: 85%;
+		}
+
+		.flex-item {
+			margin: 0.5rem;
+			text-align: center;
+			margin: auto;
+
+			p {
+				margin-top: 1rem;
+			}
+
+			.text-danger {
+				color: rgb(241, 95, 79);
+			}
+
+			.text-success {
+				color: rgb(74, 219, 74);
+			}
+
+			.box {
+				width: 200px;
+				height: 150px;
+				margin: 0.5rem;
+
+				img {
+					width: 100%;
+					height: 100%;
+					cursor: pointer;
+
+					&:hover {
+						box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+					}
+				}
+			}
+		}
+	}
+}
+
+.score {
+	text-align: center;
+	margin: 2rem 0;
+	color: $heading-4;
+}
+
+.refresh-btn {
+	text-align: center;
+
+	.btn {
+		border: none;
+		padding: 0.3rem;
+		letter-spacing: 0.1rem;
+		background: $primary-color-5;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1rem;
+	}
+}

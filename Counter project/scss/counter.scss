@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./reset";
+@import "./variables";
+
+body {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.1rem;
+	background: $background;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.project-container {
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: $dark-shadow;
+	padding: 2rem;
+	mask-border-width: 300px;
+
+	.header {
+		text-align: center;
+		.project-name {
+			letter-spacing: 0.2rem;
+			font-size: 1.7rem;
+			color: $heading-3;
+			margin-bottom: 4px;
+		}
+		.underline {
+			width: 70px;
+			background: $primary-color;
+			height: 4px;
+			border-radius: 5px;
+			margin: auto;
+		}
+	}
+
+	.project-body {
+		.counter-div {
+			margin: 2rem 1rem;
+			text-align: center;
+
+			.counter {
+				font-size: 6rem;
+			}
+		}
+
+		.btn-group {
+			text-align: center;
+
+			button {
+				padding: 0.5rem;
+				border-radius: 3px;
+				outline: none;
+				margin: 0.1rem;
+				letter-spacing: 0.1rem;
+				font-size: 1rem;
+				text-transform: capitalize;
+				border: none;
+				cursor: pointer;
+				&:focus {
+					border: 2px solid $primary-color;
+				}
+			}
+
+			.decrease {
+				background: rgb(245, 110, 110);
+			}
+			.reset {
+				background: $primary-color;
+			}
+			.increase {
+				background: rgb(110, 245, 151);
+			}
+		}
+	}
+}

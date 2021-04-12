@@ -1,0 +1,42 @@
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+
+/* Darkest grey - used for headings */
+$heading-1: hsl(209, 61%, 16%);
+$heading-2: hsl(211, 39%, 23%);
+$heading-3: hsl(209, 34%, 30%);
+$heading-4: hsl(209, 28%, 39%);
+
+/* Grey used for paragraphs */
+$para-1: hsl(210, 22%, 49%);
+$para-2: hsl(209, 23%, 60%);
+$para-3: hsl(211, 27%, 70%);
+$para-4: hsl(210, 31%, 80%);
+$para-5: hsl(212, 33%, 89%);
+$para-6: hsl(210, 36%, 96%);
+
+/* dark shades of primary color*/
+$primary-color-1: hsl(205, 86%, 17%);
+$primary-color-2: hsl(205, 77%, 27%);
+$primary-color-3: hsl(205, 72%, 37%);
+$primary-color-4: hsl(205, 63%, 48%);
+
+/* primary/main color */
+$primary-color-5: #49a6e9;
+
+/* lighter shades of primary color */
+$primary-color-6: hsl(205, 89%, 70%);
+$primary-color-7: hsl(205, 90%, 76%);
+$primary-color-8: hsl(205, 86%, 81%);
+$primary-color-9: hsl(205, 90%, 88%);
+$primary-color-10: hsl(205, 100%, 96%);
+
+/* box shadows */
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+/* Body background */
+$background: #f1f5f8;

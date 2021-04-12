@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+/* Mixins */
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  letter-spacing: 0.1rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+.projectName {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.projectName h1 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: #324d67;
+  letter-spacing: 0.4rem;
+}
+.projectName .underline {
+  width: 70px;
+  height: 4px;
+  background: #49a6e9;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.digital-clock {
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 350px;
+  background: #fff;
+}
+.digital-clock .clock .parts {
+  text-align: center;
+  background: #f1f5f8;
+  border-radius: 10px;
+}
+.digital-clock .clock .parts .time {
+  color: #324d67;
+  font-size: 3.5rem;
+}
+.digital-clock .clock .parts .time .ampm {
+  font-size: xx-large;
+}
+.digital-clock .clock .alarms {
+  padding: 1rem;
+}
+.digital-clock .clock .alarms h3 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: #49a6e9;
+}
+.digital-clock .clock .alarms .alarms-box .message {
+  text-align: center;
+  color: #617d98;
+}
+.digital-clock .clock .alarms .alarms-box .alarm {
+  display: flex;
+  color: #617d98;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.digital-clock .clock .alarms .alarms-box .alarm .delete {
+  background: #f58d8d;
+  border: 2px solid #f83d3d;
+  padding: 0.1rem 0.2rem;
+  color: #ff0000;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.digital-clock .clock .controls {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.digital-clock .clock .controls .add {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.2rem;
+  background: #49a6e9;
+  border: none;
+  width: 50px;
+  color: #fff;
+  transition: background 0.5s linear;
+}
+.digital-clock .clock .controls .add:hover {
+  background: #102a42;
+}
+.digital-clock .clock .controls .clrAll {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.2rem;
+  border: 2px solid #f83d3d;
+  margin-left: 0.5rem;
+  color: #dae2ec;
+  background: #f83d3d;
+}
+.digital-clock .clock .controls .display-none {
+  display: none;
+}
+
+/* Modal styles */
+.modalOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+.modalOverlay .modalContainer {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  width: 310px;
+  -webkit-animation: slideDown 1s forwards ease;
+          animation: slideDown 1s forwards ease;
+}
+.modalOverlay .modalContainer .modalContent .modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #102a42;
+}
+.modalOverlay .modalContainer .modalContent .modalHeader .closeModal {
+  border-radius: 5px;
+  background: #f1f5f8;
+  border: none;
+  padding: 0.1rem 0.5rem;
+  color: red;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.5s linear;
+}
+.modalOverlay .modalContainer .modalContent .modalHeader .closeModal:hover {
+  background: #c5e5fc;
+}
+.modalOverlay .modalContainer .modalContent .modalBody {
+  margin-top: 1.4rem;
+  text-align: center;
+}
+.modalOverlay .modalContainer .modalContent .modalBody .modalHr,
+.modalOverlay .modalContainer .modalContent .modalBody .modalMin {
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background: #ebf7ff;
+  font-size: 1rem;
+}
+.modalOverlay .modalContainer .modalContent .modalBody .modalHr:focus,
+.modalOverlay .modalContainer .modalContent .modalBody .modalMin:focus {
+  outline: none;
+}
+.modalOverlay .modalContainer .modalContent .modalBody .create {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.2rem;
+  background: #49a6e9;
+  border: none;
+  width: 50px;
+  padding: 0.3rem 0;
+  margin: auto;
+  color: #fff;
+  transition: background 0.5s linear;
+}
+.modalOverlay .modalContainer .modalContent .modalBody .create:hover {
+  background: #102a42;
+}
+
+.show-modal {
+  display: none !important;
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+  from {
+    transform: translateY(-1000px);
+  }
+}
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+  from {
+    transform: translateY(-1000px);
+  }
+}
+@media (max-width: 396px) {
+  .digital-clock {
+    width: 90%;
+  }
+}

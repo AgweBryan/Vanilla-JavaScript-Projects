@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grocery List Project</title>
+		<link rel="stylesheet" href="./scss/groceryList.css" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+		<link rel="stylesheet" href="../font-awesome/css/all.css" />
+	</head>
+	<body>
+		<!-- main container -->
+		<div class="projectContainer">
+			<div class="container">
+				<!-- project header -->
+				<div class="header">
+					<h1 class="projectName"><strong>Grocery list</strong></h1>
+					<div class="underline"></div>
+				</div>
+				<!-- input form -->
+				<form class="inputForm">
+					<input type="text" class="input-item" placeholder="e.g. Milk" />
+					<input type="submit" class="submit" value="submit" />
+				</form>
+				<!-- grocery items -->
+				<div class="display-none">
+					<div class="itemsContainer"></div>
+					<div class="clrDiv">
+						<button class="btn-clear">Clear list</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  background: #f1f5f8;
+}
+
+.project-header {
+  text-align: center;
+  margin: 2rem;
+}
+.project-header .project-title {
+  font-size: 1.7rem;
+  color: #102a42;
+  margin-bottom: 12px;
+  letter-spacing: 0.2rem;
+}
+.project-header .underline {
+  margin: auto;
+  height: 3.5px;
+  border-radius: 5px;
+  background: #49a6e9;
+  width: 70px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container .box {
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  width: 400px;
+}
+@media (max-width: 450px) {
+  .container {
+    width: 85%;
+  }
+}
+.container form .form-group {
+  margin-bottom: 1rem;
+  color: #324d67;
+}
+.container form .form-group input {
+  display: block;
+  margin-top: 8px;
+  border: 1px solid #48647f;
+  padding: 0.5rem;
+}
+.container form .btn {
+  margin-top: 10px;
+  padding: 0.3rem;
+  letter-spacing: 0.1rem;
+  background: #6ebef7;
+  color: #102a42;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.container .result {
+  margin-top: 1rem;
+  color: #102a42;
+}
+.container .display-none {
+  display: none !important;
+}
+
+.BMI-index {
+  width: 100%;
+  text-align: center;
+}
+.BMI-index h2 {
+  color: #243a52;
+  font-size: 1.4rem;
+}
+.BMI-index .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.BMI-index .flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.BMI-index .flex-row .flex-column {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #617d98;
+  color: #617d98;
+}
+.BMI-index .flex-row .flex-column p:first-child {
+  color: #102a42;
+  border-bottom: 1px solid #617d98;
+}
+.BMI-index .flex-row .flex-column p {
+  padding: 0.5rem;
+}

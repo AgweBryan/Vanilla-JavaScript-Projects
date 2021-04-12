@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  background: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.project-container {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  -webkit-mask-box-image-width: 300px;
+          mask-border-width: 300px;
+}
+.project-container .header {
+  text-align: center;
+}
+.project-container .header .project-name {
+  letter-spacing: 0.2rem;
+  font-size: 1.7rem;
+  color: #324d67;
+  margin-bottom: 4px;
+}
+.project-container .header .underline {
+  width: 70px;
+  background: #49a6e9;
+  height: 4px;
+  border-radius: 5px;
+  margin: auto;
+}
+.project-container .project-body .counter-div {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+.project-container .project-body .counter-div .counter {
+  font-size: 6rem;
+}
+.project-container .project-body .btn-group {
+  text-align: center;
+}
+.project-container .project-body .btn-group button {
+  padding: 0.5rem;
+  border-radius: 3px;
+  outline: none;
+  margin: 0.1rem;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+}
+.project-container .project-body .btn-group button:focus {
+  border: 2px solid #49a6e9;
+}
+.project-container .project-body .btn-group .decrease {
+  background: #f56e6e;
+}
+.project-container .project-body .btn-group .reset {
+  background: #49a6e9;
+}
+.project-container .project-body .btn-group .increase {
+  background: #6ef597;
+}

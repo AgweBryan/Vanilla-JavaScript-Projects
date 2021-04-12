@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import "./reset";
+@import "./variables";
+
+body {
+	font-family: "Architects Daughter", cursive;
+	background: coral;
+	letter-spacing: 0.1rem;
+}
+
+.container-1 {
+	margin: 1.3rem;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	padding: 1rem 0;
+	margin: auto;
+
+	h1 {
+		text-transform: capitalize;
+		color: $heading-1;
+	}
+
+	button {
+		font-family: "Architects Daughter", cursive;
+		border: none;
+		font-weight: bold;
+		background: transparent;
+		cursor: pointer;
+		letter-spacing: 0.1rem;
+		font-size: 1.2rem;
+		outline: none;
+		color: $heading-3;
+
+		&:hover {
+			color: $primary-color-3;
+		}
+	}
+}
+
+.display {
+	display: block !important;
+}
+
+.container-2 {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 250px;
+	height: 250px;
+	z-index: 999;
+
+	textarea {
+		font-family: "Architects Daughter", cursive;
+		width: 100%;
+		height: 100%;
+		font-size: 1.5rem;
+		padding: 2.3rem 1rem 1rem 1rem;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+		color: $heading-3;
+		box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.7);
+	}
+
+	.btn-group {
+		position: relative;
+		top: -99%;
+		left: 75%;
+		border: none;
+		padding: 0.2rem;
+		background: transparent;
+
+		.check-btn {
+			padding: 0.1rem 0.15rem;
+			border: 1px solid $para-1;
+			color: $para-1;
+			background: transparent;
+			cursor: pointer;
+		}
+		.times-btn {
+			padding: 0.1rem 0.25rem;
+			border: 1px solid $para-1;
+			color: $para-1;
+			background: transparent;
+			cursor: pointer;
+		}
+	}
+}
+
+.container-3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 90%;
+	margin: 0 auto;
+
+	.note {
+		width: 250px;
+		height: 250px;
+		background: turquoise;
+		padding: 1.5rem;
+		margin: 0.5rem 0.5rem;
+		overflow: hidden;
+		word-wrap: break-word;
+
+		&:hover {
+			box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.7);
+			transform: scale(1.1) !important;
+		}
+	}
+}

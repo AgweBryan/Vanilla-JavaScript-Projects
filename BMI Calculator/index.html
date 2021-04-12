@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BMI Calculator</title>
+		<link rel="stylesheet" href="./scss/bmi.css" />
+	</head>
+	<body>
+		<div class="project-header">
+			<h1 class="project-title">BMI Calculator</h1>
+			<div class="underline"></div>
+		</div>
+
+		<div class="container">
+			<div class="box">
+				<form>
+					<div class="form-group">
+						<label>Your Weight(kg):</label>
+						<input type="number" class="weight" />
+					</div>
+
+					<div class="form-group">
+						<label>Your Height(cm):</label>
+						<input type="number" class="height" />
+					</div>
+
+					<input type="submit" value="Calculate" class="btn" />
+				</form>
+
+				<h2 class="result display-none">Your BMI = <span id="BMI">23.45</span></h2>
+			</div>
+		</div>
+
+		<div class="BMI-index">
+			<h2>BMI Index</h2>
+			<div class="center">
+				<div class="flex-row">
+					<div class="flex-column">
+						<p class="bold-text">Underweight</p>
+						<p class="light-text">Below 18.5</p>
+					</div>
+					<div class="flex-column">
+						<p class="bold-text">Healthy</p>
+						<p class="light-text">18.5 - 24.9</p>
+					</div>
+					<div class="flex-column">
+						<p class="bold-text">Overweight</p>
+						<p class="light-text">25.0 - 29.9</p>
+					</div>
+					<div class="flex-column">
+						<p class="bold-text">Obese</p>
+						<p class="light-text">30.0 & Above</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>

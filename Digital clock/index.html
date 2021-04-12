@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Digital Clock Project</title>
+		<link rel="stylesheet" href="./scss/digitalClock.css" />
+	</head>
+	<body>
+		<header class="projectName">
+			<h1><strong>digital clock</strong></h1>
+			<div class="underline"></div>
+		</header>
+		<!-- Modal container -->
+		<div class="modalOverlay show-modal">
+			<div class="modalContainer">
+				<div class="modalContent">
+					<div class="modalHeader">
+						<h3>Set Alarm</h3>
+						<button class="closeModal"><span>&timesbar;</span></button>
+					</div>
+					<div class="modalBody">
+						<input type="number" class="modalHr" placeholder="Enter hours..." />
+						<input type="number" class="modalMin" placeholder="Enter minutes..." />
+						<button class="create">Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- main digital clock container -->
+		<div class="digital-clock">
+			<div class="clock">
+				<!-- clock parts -->
+				<div class="parts">
+					<!-- <h1 class="time">00 : 00 <span class="ampm">PM</span></h1> -->
+				</div>
+
+				<!-- alarms container -->
+				<div class="alarms">
+					<h3>Alarms</h3>
+					<div class="alarms-box"></div>
+				</div>
+				<!-- add and remove buttons -->
+				<div class="controls">
+					<button class="add">Add</button>
+					<button class="clrAll">Clear</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>

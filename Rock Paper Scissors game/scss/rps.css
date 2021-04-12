@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+body {
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
+  background: #f1f5f8;
+}
+
+.header {
+  text-align: center;
+  margin: 2rem 0;
+}
+.header .project-title {
+  color: #102a42;
+  font-size: 1.7rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 12px;
+}
+.header .underline {
+  margin: auto;
+  width: 80px;
+  height: 3.5px;
+  background: #6ebef7;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .game-box {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #617d98;
+}
+@media (max-width: 710px) {
+  .container .game-box {
+    width: 85%;
+  }
+}
+.container .game-box .flex-item {
+  margin: 0.5rem;
+  text-align: center;
+  margin: auto;
+}
+.container .game-box .flex-item p {
+  margin-top: 1rem;
+}
+.container .game-box .flex-item .text-danger {
+  color: #f15f4f;
+}
+.container .game-box .flex-item .text-success {
+  color: #4adb4a;
+}
+.container .game-box .flex-item .box {
+  width: 200px;
+  height: 150px;
+  margin: 0.5rem;
+}
+.container .game-box .flex-item .box img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.container .game-box .flex-item .box img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.score {
+  text-align: center;
+  margin: 2rem 0;
+  color: #48647f;
+}
+
+.refresh-btn {
+  text-align: center;
+}
+.refresh-btn .btn {
+  border: none;
+  padding: 0.3rem;
+  letter-spacing: 0.1rem;
+  background: #6ebef7;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}

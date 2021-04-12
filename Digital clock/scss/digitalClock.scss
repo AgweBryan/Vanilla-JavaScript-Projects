@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./resets";
+@import "./variables";
+
+/* Mixins */
+@mixin flex($justifyContent) {
+	display: flex;
+	justify-content: $justifyContent;
+	align-items: center;
+}
+
+@mixin btnStyle {
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	border-radius: 50px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	padding: 0.2rem 0.2rem;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: $background;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	letter-spacing: 0.1rem;
+}
+
+button:focus {
+	outline: none;
+}
+
+.projectName {
+	margin-bottom: 2.5rem;
+	text-align: center;
+
+	h1 {
+		font-size: 1.7rem;
+		text-transform: capitalize;
+		color: $heading-3;
+		letter-spacing: 0.4rem;
+	}
+
+	.underline {
+		width: 70px;
+		height: 4px;
+		background: $primary-color;
+		margin: auto;
+		border-radius: 5px;
+	}
+}
+
+.digital-clock {
+	padding: 1.5rem;
+	box-shadow: $dark-shadow;
+	border-radius: 10px;
+	width: 350px;
+	background: #fff;
+
+	.clock {
+		.parts {
+			text-align: center;
+			background: $background;
+			border-radius: 10px;
+
+			.time {
+				color: $heading-3;
+				font-size: 3.5rem;
+
+				.ampm {
+					font-size: xx-large;
+				}
+			}
+		}
+
+		.alarms {
+			padding: 1rem;
+			// display: none;
+
+			h3 {
+				font-size: 1rem;
+				margin-bottom: 0.6rem;
+				color: $primary-color;
+			}
+
+			.alarms-box {
+				.message {
+					text-align: center;
+					color: $para-1;
+				}
+				.alarm {
+					display: flex;
+					color: $para-1;
+					justify-content: space-between;
+					margin-bottom: 1rem;
+
+					.delete {
+						background: #f58d8d;
+						border: 2px solid #f83d3d;
+						padding: 0.1rem 0.2rem;
+						color: #ff0000;
+						border-radius: 4px;
+						font-weight: bold;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		.controls {
+			padding: 1rem;
+			display: flex;
+			justify-content: center;
+
+			.add {
+				@include btnStyle();
+				background: $primary-color;
+				border: none;
+				width: 50px;
+				color: #fff;
+				transition: background 0.5s linear;
+
+				&:hover {
+					background: $heading-1;
+				}
+			}
+
+			.clrAll {
+				@include btnStyle();
+				border: 2px solid #f83d3d;
+				margin-left: 0.5rem;
+				color: $para-5;
+				background: #f83d3d;
+			}
+
+			.display-none {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Modal styles */
+.modalOverlay {
+	@include flex(center);
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100vw;
+	height: 100vh;
+
+	.modalContainer {
+		padding: 1rem;
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+		width: 310px;
+		animation: slideDown 1s forwards ease;
+
+		.modalContent {
+			.modalHeader {
+				@include flex(space-between);
+				padding-bottom: 0.5rem;
+				border-bottom: 2px solid $heading-1;
+
+				.closeModal {
+					border-radius: 5px;
+					background: $background;
+					border: none;
+					padding: 0.1rem 0.5rem;
+					color: red;
+					font-size: 1.4rem;
+					cursor: pointer;
+					transition: background 0.5s linear;
+
+					&:hover {
+						background: $primary-color-8;
+					}
+				}
+			}
+
+			.modalBody {
+				margin-top: 1.4rem;
+				text-align: center;
+
+				.modalHr,
+				.modalMin {
+					width: 100%;
+					padding: 0.4rem;
+					border: none;
+					margin-bottom: 1rem;
+					border-radius: 5px;
+					background: $primary-color-9;
+					font-size: 1rem;
+
+					&:focus {
+						outline: none;
+					}
+				}
+
+				.create {
+					@include btnStyle;
+					background: $primary-color;
+					border: none;
+					width: 50px;
+					padding: 0.3rem 0;
+					margin: auto;
+					color: #fff;
+					transition: background 0.5s linear;
+
+					&:hover {
+						background: $heading-1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.show-modal {
+	display: none !important;
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-1000px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideUp {
+	to {
+		transform: translateY(0);
+	}
+	from {
+		transform: translateY(-1000px);
+	}
+}
+
+@media (max-width: 396px) {
+	.digital-clock {
+		width: 90%;
+	}
+}

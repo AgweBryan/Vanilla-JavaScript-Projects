@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+   =========
+   VARIABLES
+	 =========
+*/
+/* Darkest grey - used for headings */
+/* Grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* box shadows */
+/* Body background */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  background: #f1f5f8;
+}
+
+.navFixed {
+  position: fixed !important;
+}
+
+.navigation {
+  width: 100vw;
+  min-height: 68px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.navigation .links {
+  list-style: none;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .navigation .links {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navigation .links .nav-item {
+    margin: 0 !important;
+  }
+}
+.navigation .links .nav-item {
+  margin: 0 1.5rem;
+}
+.navigation .links .nav-item .nav-link {
+  color: #48647f;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.navigation .links .nav-item .nav-link:hover {
+  color: #ec7676;
+}
+.navigation .links .nav-item .active {
+  color: #ec7676;
+}
+
+section {
+  height: 50vh;
+  color: #48647f;
+  text-align: center;
+}
+section h1 {
+  text-transform: capitalize;
+  font-size: 1.9rem;
+}
+section h1 .red {
+  color: #ec7676;
+}
+
+section:nth-child(odd) {
+  background: #c5e5fc;
+}

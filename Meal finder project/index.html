@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meal Finder Project</title>
+		<link rel="stylesheet" href="./scss/meal.css" />
+		<link rel="stylesheet" href="../font-awesome/css/all.css" />
+	</head>
+	<body>
+		<!-- preloader -->
+		<div class="preloader-div">
+			<img src="./images/loader4.gif" alt="" />
+		</div>
+
+		<div class="container">
+			<br />
+			<div class="header">
+				<h1 class="project-name"><i class="fa fa-chef-hat"></i> Menu Project</h1>
+				<div class="underline"></div>
+			</div>
+			<br />
+			<div class="flex-column">
+				<form>
+					<input type="text" id="search" placeholder="Search meal..." />
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+
+				<!-- categories -->
+				<select id="categories">
+					<option class="category" value="Random">random</option>
+					<option class="category" value="Beef">beef</option>
+					<option class="category" value="Chicken">chicken</option>
+					<option class="category" value="Dessert">dessert</option>
+					<option class="category" value="Lamb">lamb</option>
+					<option class="category" value="Miscellaneous">miscellaneous</option>
+					<option class="category" value="Pasta">pasta</option>
+					<option class="category" value="Seafood">seafood</option>
+					<option class="category" value="Side">side</option>
+					<option class="category" value="Vegan">vegan</option>
+					<option class="category" value="Vegetarian">vegetarian</option>
+					<option class="category" value="Breakfast">breakfast</option>
+				</select>
+			</div>
+			<br />
+			<h3 id="searchResults"></h3>
+			<!-- meals -->
+			<div class="menu"></div>
+		</div>
+
+		<script src="main.js" async></script>
+	</body>
+</html>
